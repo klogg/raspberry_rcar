@@ -1,0 +1,33 @@
+// Power management functions
+pin@p3  { function = "input";  polarity = "active_low"; termination = "pull_up"; };    // #PS_ON
+pin@p4  { function = "output"; polarity = "active_low"; startup_state = "inactive"; }; // #KILL
+pin@p5  { function = "input";  polarity = "active_low"; termination = "pull_up"; };    // #INT
+
+// Boards' power control functinos
+pin@p13 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // EN_1
+pin@p26 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // EN_2
+pin@p12 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // EN_3
+pin@p23 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // EN_4
+pin@p27 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // EN_5
+pin@p22 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // EN_6
+
+// Boards GPIO block 1
+pin@p21 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO1_1
+pin@p20 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO1_2
+pin@p6  { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO1_3
+pin@p7  { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO1_4
+pin@p18 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO1_5
+pin@p9  { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO1_6
+
+// Boards GPIO block 2
+pin@p8  { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO2_1
+pin@p10 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO2_2
+pin@p11 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO2_3
+pin@p17 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO2_4
+pin@p24 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO2_5
+pin@p25 { function = "input"; polarity = "active_high"; termination = "pull_down"; }; // GPIO2_6
+
+// LEDs
+pin@p2  { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // LED_1
+pin@p19 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // LED_2
+pin@p16 { function = "output"; polarity = "active_high"; startup_state = "inactive"; }; // LED_3
